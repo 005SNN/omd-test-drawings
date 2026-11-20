@@ -1,6 +1,6 @@
 # Test drawings for DWG readers
 
-Small drawings made on purpose in **AutoCAD LT 2027 for Mac** on 2026-11-20 (two sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
+Small drawings made on purpose in **AutoCAD LT 2027 for Mac** on 2026-11-20 (three sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
 
 Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anything, no attribution needed.
 
@@ -16,5 +16,17 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `normals-2018.dwg`, `.dxf`; `normals-2013.dwg` | 2018, 2013 | An arc, a bulged polyline, an elliptical arc, a text, a block with an attribute, a linear dimension and a far circle, each mirrored about x = 20000 (MIRRTEXT 0: only the ellipse is stored under a −Z normal); a circle, text and block drawn in a UCS turned 30° about X at elevation 500; a fit-point spline out of the XY plane. |
 | `H1-2018.dwg`, `.dxf`; `H1-2013.dwg` | 2018, 2013 | A text style of width 0.8 and oblique 15° (Arial) and one MTEXT in it. |
 | `gradient2-2018.dwg`, `.dxf` | 2018 | A gradient hatch with a colour-book colour, changed to a SOLID fill (AutoCAD keeps the gradient's colour records). |
+| `attrib-2018.dwg`, `.dxf`; `attrib-2013.dwg`, `.dxf` | 2018, 2013 | A title block: a rectangle and two single-line attribute definitions in a block, inserted once (TITLE = HOUSE, SHEET = A-02). |
+| `attconst-2018.dwg`, `.dxf`; `attconst-2013.dwg`, `.dxf` | 2018, 2013 | A block with one constant attribute definition (MARK = CONST), inserted once. |
+| `leader-2018.dwg`, `.dxf`; `leader-2013.dwg`, `.dxf`; `leader-2004.dwg`, `.dxf` | 2018, 2013, 2004 | One LEADER of three vertices with its arrowhead on, associated with an MTEXT (NOTE 1), dimension style ISO-25. |
+| `mleader-2018.dwg`, `.dxf`; `mleader-2013.dwg`, `.dxf` | 2018, 2013 | One MULTILEADER with MTEXT content (NOTE 2). |
+| `mleader-none-2018.dwg`, `.dxf`; `mleader-none-2013.dwg`, `.dxf` | 2018, 2013 | One MULTILEADER with no content (content type None). |
+| `table-2018.dwg`, `.dxf`; `table-2013.dwg`, `.dxf` | 2018, 2013 | One table of 2 columns and 4 rows (title, header, two data rows), cells A to G. |
+| `dimang3-2018.dwg`, `.dxf`; `dimang3-2013.dwg`, `.dxf` | 2018, 2013 | One three-point angular dimension (53°). |
+| `ucs-2018.dwg`, `.dxf`; `ucs-2013.dwg`, `.dxf` | 2018, 2013 | A named UCS (U-ROT30) saved in the UCS table, with the world UCS current. |
+| `pagesetup-2018.dwg`, `.dxf`; `pagesetup-2013.dwg`, `.dxf` | 2018, 2013 | A named page setup (PS-A4, no printer, ISO A4) beside the model's own. |
+| `polyline2d-2018.dwg`, `.dxf`; `polyline2d-2013.dwg`, `.dxf` | 2018, 2013 | One closed old-style 2D POLYLINE of three vertices (PLINETYPE 0), not a lightweight polyline. |
+| `T0-2013.dwg`, `.dxf` | 2013 | `T0.dwg` saved as 2013. |
+| `F2-2013.dwg`, `.dxf` | 2013 | `F2-2018.dwg` saved as 2013. |
 
 `SHA256SUMS` lists every file's sha256.

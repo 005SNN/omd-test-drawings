@@ -28,5 +28,16 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `polyline2d-2018.dwg`, `.dxf`; `polyline2d-2013.dwg`, `.dxf` | 2018, 2013 | One closed old-style 2D POLYLINE of three vertices (PLINETYPE 0), not a lightweight polyline. |
 | `T0-2013.dwg`, `.dxf` | 2013 | `T0.dwg` saved as 2013. |
 | `F2-2013.dwg`, `.dxf` | 2013 | `F2-2018.dwg` saved as 2013. |
+| `attjust-2018.dwg`, `.dxf`; `attjust-2013.dwg`, `.dxf` | 2018, 2013 | Two attributes in a block, inserted once: ROOM = KITCHEN middle-centred at 90,25, NO = 101 right-aligned at 170,8. |
+| `attml-2018.dwg`, `.dxf`; `attml-2013.dwg`, `.dxf` | 2018, 2013 | A multi-line attribute (NOTE = SEE / DETAIL 4) in a block, inserted once. |
+| `attrot-2018.dwg`, `.dxf`; `attrot-2013.dwg`, `.dxf` | 2018, 2013 | A block with one attribute (TAG = DOOR 7) inserted at rotation 30°. |
+| `attscale-2018.dwg`, `.dxf`; `attscale-2013.dwg`, `.dxf` | 2018, 2013 | A block with one attribute (TAG = WIDE 2) inserted with X scale 2, Y scale 1. |
+| `ldrhook-2018.dwg`, `.dxf`; `ldrhook-2013.dwg`, `.dxf` | 2018, 2013 | One LEADER whose last segment slopes at 45°, with the hook line AutoCAD adds before its MTEXT (NOTE 3). |
+| `pl2darc-2018.dwg`, `.dxf`; `pl2darc-2013.dwg`, `.dxf` | 2018, 2013 | One closed old-style 2D POLYLINE of four vertices, one of them a half-circle arc (bulge 1). |
+| `mzarc-2018.dwg`, `.dxf`; `mzarc-2013.dwg`, `.dxf` | 2018, 2013 | A 270° arc drawn in a UCS looking from below (normal 0,0,−1). |
+| `mzins-2018.dwg`, `.dxf`; `mzins-2013.dwg`, `.dxf` | 2018, 2013 | A block (a flag of one polyline) inserted in a UCS looking from below (normal 0,0,−1). |
+| `lttext-2018.dwg`, `.dxf`; `lttext-2013.dwg`, `.dxf` | 2018, 2013 | One line in the linetype GAS_LINE, which carries the text GAS in its dashes. |
+| `stylew-2018.dwg`, `.dxf`; `stylew-2013.dwg`, `.dxf` | 2018, 2013 | A text style of width 0.8 (Arial) and one MTEXT in it, inside a block with a frame. |
+| `mzell-2018.dwg`, `.dxf`; `mzell-2013.dwg`, `.dxf` | 2018, 2013 | An elliptical arc drawn from below (normal 0,0,−1) inside a block with a fixed frame. |
 
 `SHA256SUMS` lists every file's sha256.

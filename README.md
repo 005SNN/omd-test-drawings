@@ -1,6 +1,6 @@
 # Test drawings for DWG readers
 
-Small drawings made on purpose in **AutoCAD LT 2027 for Mac** on 2026-11-20 (three sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
+Small drawings made on purpose in **AutoCAD LT 2027 for Mac** on 2026-11-20 and 21 (five sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
 
 Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anything, no attribution needed.
 
@@ -39,5 +39,8 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `lttext-2018.dwg`, `.dxf`; `lttext-2013.dwg`, `.dxf` | 2018, 2013 | One line in the linetype GAS_LINE, which carries the text GAS in its dashes. |
 | `stylew-2018.dwg`, `.dxf`; `stylew-2013.dwg`, `.dxf` | 2018, 2013 | A text style of width 0.8 (Arial) and one MTEXT in it, inside a block with a frame. |
 | `mzell-2018.dwg`, `.dxf`; `mzell-2013.dwg`, `.dxf` | 2018, 2013 | An elliptical arc drawn from below (normal 0,0,−1) inside a block with a fixed frame. |
+| `mlscale-2018.dwg`, `.dxf`; `mlscale-2013.dwg`, `.dxf` | 2018, 2013 | One MULTILEADER (NOTE 5) drawn at MLEADERSCALE 48, with a frame, inside a block inserted once. |
+| `mlarrow-2018.dwg`, `.dxf`; `mlarrow-2013.dwg`, `.dxf` | 2018, 2013 | One MULTILEADER (NOTE 6) whose own arrowhead size is 6 where its style's is 4. |
+| `mzoffarc-2018.dwg`, `.dxf`; `mzoffarc-2013.dwg`, `.dxf` | 2018, 2013 | A 270° arc drawn from below (normal 0,0,−1) with its centre off both axes, inside a block with a fixed frame. |
 
 `SHA256SUMS` lists every file's sha256.

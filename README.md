@@ -1,6 +1,6 @@
 # Test drawings for DWG readers
 
-Small drawings made on purpose in **AutoCAD LT 2027 for Mac** on 2026-11-20 and 21 (five sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
+Small drawings made on purpose in **AutoCAD LT 2027 for Mac** on 2026-11-20 and 21 (six sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
 
 Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anything, no attribution needed.
 
@@ -42,5 +42,29 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `mlscale-2018.dwg`, `.dxf`; `mlscale-2013.dwg`, `.dxf` | 2018, 2013 | One MULTILEADER (NOTE 5) drawn at MLEADERSCALE 48, with a frame, inside a block inserted once. |
 | `mlarrow-2018.dwg`, `.dxf`; `mlarrow-2013.dwg`, `.dxf` | 2018, 2013 | One MULTILEADER (NOTE 6) whose own arrowhead size is 6 where its style's is 4. |
 | `mzoffarc-2018.dwg`, `.dxf`; `mzoffarc-2013.dwg`, `.dxf` | 2018, 2013 | A 270° arc drawn from below (normal 0,0,−1) with its centre off both axes, inside a block with a fixed frame. |
+| `vpoff-2018.dwg`, `.dxf`; `vpoff-2013.dwg`, `.dxf` | 2018, 2013 | A sheet with two viewports onto the same figure: a plain one (CONTROL) and one switched off (OFF). |
+| `vptwist-2018.dwg`, `.dxf`; `vptwist-2013.dwg`, `.dxf` | 2018, 2013 | A sheet with a plain viewport and one whose view is turned 30° (TWIST 30). |
+| `vpdir-2018.dwg`, `.dxf`; `vpdir-2013.dwg`, `.dxf` | 2018, 2013 | A sheet with a plain viewport and one that looks from the side, view direction 0,−1,1. |
+| `vpclip-2018.dwg`, `.dxf`; `vpclip-2013.dwg`, `.dxf` | 2018, 2013 | A sheet with a plain viewport and one clipped to a five-cornered polyline (CLIP). |
+| `vpfrz-2018.dwg`, `.dxf`; `vpfrz-2013.dwg`, `.dxf` | 2018, 2013 | A sheet with a plain viewport and one in which the layer V-FRZ (holding the circle) is frozen alone. |
+| `vpover-2018.dwg`, `.dxf`; `vpover-2013.dwg`, `.dxf` | 2018, 2013 | A sheet with a plain viewport and three overlapping pairs: two that overlap in part; a small one made after the large one it lies in; a small one made before the large one laid around it. |
+| `psltwo-2018.dwg`, `.dxf`; `psltwo-2013.dwg`, `.dxf` | 2018, 2013 | Two sheets, each with one viewport onto a dashed line and a continuous one: Layout1 at PSLTSCALE 1, Layout2 at PSLTSCALE 0. |
+| `xrefhost-2018.dwg`, `.dxf`; `xrefhost-2013.dwg`, `.dxf` | 2018, 2013 | A line and a circle with two external references: `border.dwg` attached and `borderov.dwg` overlaid, each stored by the relative path `./border.dwg`, `./borderov.dwg`. |
+| `border.dwg`, `borderov.dwg` | 2018 | The two drawings `xrefhost` refers to, the same bytes: a rectangle labelled BORDER. |
+| `attmode1-2018.dwg`, `.dxf`; `attmode1-2013.dwg`, `.dxf` | 2018, 2013 | Two inserts of a block with a visible attribute (SEEN 1, SEEN 2) and an invisible one (SECRET 1, SECRET 2), at ATTMODE 1: the invisible ones are not drawn. |
+| `attmode2-2018.dwg`, `.dxf`; `attmode2-2013.dwg`, `.dxf` | 2018, 2013 | `attmode1` at ATTMODE 2: every attribute is drawn. |
+| `spluni-2018.dwg`, `.dxf`; `spluni-2013.dwg`, `.dxf` | 2018, 2013 | Two fit-point splines through the same five points, 80 apart: one with chord knots (CHORD), one with uniform knots (UNIFORM). |
+| `splsqrt-2018.dwg`, `.dxf`; `splsqrt-2013.dwg`, `.dxf` | 2018, 2013 | As `spluni`, the second spline with square-root knots (SQUARE ROOT). |
+| `pl2dfit-2018.dwg`, `.dxf`; `pl2dfit-2013.dwg`, `.dxf` | 2018, 2013 | Two old-style 2D POLYLINEs of four vertices: one plain, one curve-fitted (FIT). |
+| `pl2dspl-2018.dwg`, `.dxf`; `pl2dspl-2013.dwg`, `.dxf` | 2018, 2013 | Three old-style 2D POLYLINEs of four vertices: one plain, one spline-fitted quadratic (SPLINETYPE 5), one cubic (SPLINETYPE 6). |
+| `ldrspl-2018.dwg`, `.dxf`; `ldrspl-2013.dwg`, `.dxf` | 2018, 2013 | Two LEADERs, each with its MTEXT: one straight (STRAIGHT), one with a spline path (SPLINE). |
+| `imgclip-2018.dwg`, `.dxf`; `imgclip-2013.dwg`, `.dxf` | 2018, 2013 | The picture `omd6.png` attached at scale 100 (100 by 50), clipped to a rectangle 60 by 30 (CLIP). |
+| `imginv-2018.dwg`, `.dxf`; `imginv-2013.dwg`, `.dxf` | 2018, 2013 | `imgclip` and a second copy of the picture whose rectangular clip is inverted: only its rim is drawn (CLIP INVERTED). |
+| `imgplain-2018.dwg`, `.dxf`; `imgplain-2013.dwg`, `.dxf` | 2018, 2013 | The picture `omd6.png` attached at scale 100, whole (IMAGE). |
+| `omd6.png` | | The picture the three image drawings attach by the relative path `./omd6.png`: 80 by 40 pixels. |
+| `wipeout2-2018.dwg`, `.dxf`; `wipeout2-2013.dwg`, `.dxf` | 2018, 2013 | A five-cornered WIPEOUT over two lines that show at both its sides. |
+| `xclipblk-2018.dwg`, `.dxf`; `xclipblk-2013.dwg`, `.dxf` | 2018, 2013 | Two inserts of a block (a rectangle, its diagonal and a circle): the lower one whole (CONTROL), the upper one clipped to a rectangle by XCLIP. |
+| `anno18-2018.dwg`, `.dxf` | 2018 | An annotative linear dimension and an annotative MTEXT (ANNO) at the annotation scale 1:2. |
+| `annovp-2018.dwg`, `.dxf` | 2018 | `anno18` with an annotative hatch and an annotative block added, every annotative object at 1:2 and 1:5, and a sheet with two viewports at 1:2 and 1:5. |
 
 `SHA256SUMS` lists every file's sha256.

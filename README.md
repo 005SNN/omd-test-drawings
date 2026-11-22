@@ -75,5 +75,8 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `attmode0-2018.dwg`, `.dxf`; `attmode0-2013.dwg`, `.dxf` | 2018, 2013 | A block with a visible attribute (SEEN) and an invisible one (SECRET), and a loose attribute definition (LOOSE), saved with ATTMODE 0: only the loose definition shows. |
 | `attdef2-2018.dwg`, `.dxf`; `attdef2-2013.dwg`, `.dxf` | 2018, 2013 | Two loose attribute definitions in model space, one visible (SHOWN) and one invisible (VEILED), saved with ATTMODE 2: both show. |
 | `mzinsrotvp-2018.dwg`, `.dxf`; `mzinsrotvp-2013.dwg`, `.dxf` | 2018, 2013 | Three INSERTs of one block `MR` (four lines, flat in the block's plane) placed from below directly in model space: extrusion 0,0,−1, scales 1, rotations 0, 90 and 180, seen through one sheet viewport at 1:4. No hatch. |
+| `xrefsheet-2018.dwg`, `.dxf`; `xrefsheet-2013.dwg`, `.dxf` | 2018, 2013 | A host drawing that places two other files: `sheetbdr.dwg` attached as an external reference in model space and again on the sheet `Layout1`, and `sheetov.dwg` as an overlay on the sheet. Three INSERTs, unscaled and unturned; the two blocks are empty in the host (BLOCK `70` 36 and 44); the path is relative (`REFPATHTYPE` 1). |
+| `sheetbdr.dwg`, `sheetov.dwg` | 2018 | The two files `xrefsheet` places, kept beside it; one same content, never opened again after they were made. |
+| `mlanno-2018.dwg`, `.dxf`; `mlanno-2013.dwg`, `.dxf` | 2018, 2013 | Fifteen MULTILEADERs with no text, directly in model space, in the style `Annotative`, made at the annotation scale 1/4" = 1'-0" and then set not annotative: `293` 0 and the entity's own scale `45` 48. Two sheets look at them through one viewport each. |
 
 `SHA256SUMS` lists every file's sha256.

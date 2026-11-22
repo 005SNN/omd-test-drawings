@@ -1,6 +1,6 @@
 # Test drawings for DWG readers
 
-Small drawings made on purpose in **AutoCAD LT 2027 for Mac** from 2026-11-20 to 22 (seven sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
+Small drawings made on purpose in **AutoCAD LT 2027 for Mac** from 2026-11-20 to 22 (eight sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
 
 Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anything, no attribution needed.
 
@@ -74,5 +74,6 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `mzarcmir-2018.dwg`, `.dxf`; `mzarcmir-2013.dwg`, `.dxf` | 2018, 2013 | Two arcs drawn from below at a height of 5 and an INSERT mirrored by an X scale of −1, seen through one sheet viewport at 1:2. |
 | `attmode0-2018.dwg`, `.dxf`; `attmode0-2013.dwg`, `.dxf` | 2018, 2013 | A block with a visible attribute (SEEN) and an invisible one (SECRET), and a loose attribute definition (LOOSE), saved with ATTMODE 0: only the loose definition shows. |
 | `attdef2-2018.dwg`, `.dxf`; `attdef2-2013.dwg`, `.dxf` | 2018, 2013 | Two loose attribute definitions in model space, one visible (SHOWN) and one invisible (VEILED), saved with ATTMODE 2: both show. |
+| `mzinsrotvp-2018.dwg`, `.dxf`; `mzinsrotvp-2013.dwg`, `.dxf` | 2018, 2013 | Three INSERTs of one block `MR` (four lines, flat in the block's plane) placed from below directly in model space: extrusion 0,0,−1, scales 1, rotations 0, 90 and 180, seen through one sheet viewport at 1:4. No hatch. |
 
 `SHA256SUMS` lists every file's sha256.

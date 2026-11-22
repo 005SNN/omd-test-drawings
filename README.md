@@ -1,6 +1,6 @@
 # Test drawings for DWG readers
 
-Small drawings made on purpose in **AutoCAD LT 2027 for Mac** on 2026-11-20 and 21 (six sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
+Small drawings made on purpose in **AutoCAD LT 2027 for Mac** from 2026-11-20 to 22 (seven sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
 
 Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anything, no attribution needed.
 
@@ -66,5 +66,13 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `xclipblk-2018.dwg`, `.dxf`; `xclipblk-2013.dwg`, `.dxf` | 2018, 2013 | Two inserts of a block (a rectangle, its diagonal and a circle): the lower one whole (CONTROL), the upper one clipped to a rectangle by XCLIP. |
 | `anno18-2018.dwg`, `.dxf` | 2018 | An annotative linear dimension and an annotative MTEXT (ANNO) at the annotation scale 1:2. |
 | `annovp-2018.dwg`, `.dxf` | 2018 | `anno18` with an annotative hatch and an annotative block added, every annotative object at 1:2 and 1:5, and a sheet with two viewports at 1:2 and 1:5. |
+| `mzinsneg-2018.dwg`, `.dxf`; `mzinsneg-2013.dwg`, `.dxf` | 2018, 2013 | A block `IO` (a rectangle and one INSERT of the block `RL`, an L of two lines) whose inner INSERT was placed from below: scales 1, 1, −1 and the extrusion 0,0,−1. `IO` is placed once the plain way. |
+| `thickline-2018.dwg`, `.dxf`; `thickline-2013.dwg`, `.dxf` | 2018, 2013 | LINEs with a thickness: four in the block `TL` (235.5), placed once at scale 1 and once at 2.8125, and two loose in model space (662.4). Seen from above they are plain lines. |
+| `mzinsnegvp-2018.dwg`, `.dxf`; `mzinsnegvp-2013.dwg`, `.dxf` | 2018, 2013 | `mzinsneg`'s drawing (blocks `IV` and `RV`) seen through one sheet viewport at 1:2. |
+| `mzarcps-2018.dwg`, `.dxf`; `mzarcps-2013.dwg`, `.dxf` | 2018, 2013 | A block `AP` (a rectangle, a visible attribute and two arcs drawn from below, extrusion 0,0,−1) placed once on the sheet's paper at scale 1.5 with the attribute's value `A1`. Model space is empty. |
+| `mzarcvp-2018.dwg`, `.dxf`; `mzarcvp-2013.dwg`, `.dxf` | 2018, 2013 | A rectangle and four arcs drawn from below (extrusion 0,0,−1) in model space, two of them at a height of 5, seen through one sheet viewport at 1:2. |
+| `mzarcmir-2018.dwg`, `.dxf`; `mzarcmir-2013.dwg`, `.dxf` | 2018, 2013 | Two arcs drawn from below at a height of 5 and an INSERT mirrored by an X scale of −1, seen through one sheet viewport at 1:2. |
+| `attmode0-2018.dwg`, `.dxf`; `attmode0-2013.dwg`, `.dxf` | 2018, 2013 | A block with a visible attribute (SEEN) and an invisible one (SECRET), and a loose attribute definition (LOOSE), saved with ATTMODE 0: only the loose definition shows. |
+| `attdef2-2018.dwg`, `.dxf`; `attdef2-2013.dwg`, `.dxf` | 2018, 2013 | Two loose attribute definitions in model space, one visible (SHOWN) and one invisible (VEILED), saved with ATTMODE 2: both show. |
 
 `SHA256SUMS` lists every file's sha256.

@@ -1,6 +1,6 @@
 # Test drawings for DWG readers
 
-Small drawings made on purpose in **AutoCAD LT 2027 for Mac** from 2026-11-20 to 22 (eight sittings), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
+Small drawings made on purpose in **AutoCAD LT 2027 for Mac** from 2026-11-20 to 25 (sittings 1 to 9, 11 and 12), each to hold one kind of thing a DWG reader must get right. Every coordinate was typed; nothing comes from a real job. Where a `.dxf` sits beside a `.dwg`, it is AutoCAD's own DXF of that drawing (ASCII, 16 decimal places), saved from the same session: a witness of what the DWG holds.
 
 Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anything, no attribution needed.
 
@@ -78,5 +78,9 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `xrefsheet-2018.dwg`, `.dxf`; `xrefsheet-2013.dwg`, `.dxf` | 2018, 2013 | A host drawing that places two other files: `sheetbdr.dwg` attached as an external reference in model space and again on the sheet `Layout1`, and `sheetov.dwg` as an overlay on the sheet. Three INSERTs, unscaled and unturned; the two blocks are empty in the host (BLOCK `70` 36 and 44); the path is relative (`REFPATHTYPE` 1). |
 | `sheetbdr.dwg`, `sheetov.dwg` | 2018 | The two files `xrefsheet` places, kept beside it; one same content, never opened again after they were made. |
 | `mlanno-2018.dwg`, `.dxf`; `mlanno-2013.dwg`, `.dxf` | 2018, 2013 | Fifteen MULTILEADERs with no text, directly in model space, in the style `Annotative`, made at the annotation scale 1/4" = 1'-0" and then set not annotative: `293` 0 and the entity's own scale `45` 48. Two sheets look at them through one viewport each. |
+| `mzinshatvp-2018.dwg`, `.dxf`; `mzinshatvp-2013.dwg`, `.dxf` | 2018, 2013 | Three INSERTs placed from below directly in model space (extrusion 0,0,−1, scale 100, rotations 0, 90 and 90) of two blocks that each hold a SOLID hatch: `ST` (four lines, its hatch's boundary a polyline path) and `EA` (an arc and four lines, its hatch's path with a bulge). A rectangle round them; one sheet viewport at 1:4. |
+| `ldrdim-2018.dwg`, `.dxf`; `ldrdim-2013.dwg`, `.dxf` | 2018, 2013 | Four straight LEADERs to an MTEXT `NOTE`, sloping right and left, with the arrowhead on (`LONR`, `LONL`) and off (`LOFFR`, `LOFFL`); a LEADER whose annotation is an INSERT of the block `LB` (`LBLK`); a linear dimension whose text is turned 30° (`DIM53`). Each on its own layer, with a label. |
+| `hatchell-2018.dwg`, `.dxf`; `hatchell-2013.dwg`, `.dxf` | 2018, 2013 | Two concentric ellipses turned 30° and eight radial lines; four SOLID hatches (`H1` to `H4`, each on its own layer) picked inside the bands between the ellipses, so each boundary holds two elliptical arcs. |
+| `splper-2018.dwg`, `.dxf`; `splper-2013.dwg`, `.dxf` | 2018, 2013 | Four splines: `A` closed from control points (degree 3, periodic); `B` closed through fit points (chord knots, periodic); `C` and `D` from control points that end where they start, not periodic (`C` smooth there, `D` with a corner at 0,0). |
 
 `SHA256SUMS` lists every file's sha256.

@@ -88,4 +88,10 @@ Released into the public domain under **CC0 1.0** (`LICENSE`): use them for anyt
 | `pl2dwid-2018.dwg`, `.dxf`; `pl2dwid-2013.dwg`, `.dxf` | 2018, 2013 | Two cubic spline-fitted old-style 2D POLYLINEs: one of constant width 0.0242373 (`WID`: the width stands on the POLYLINE, none on its VERTEXes) and one thin (`THIN`); one sheet viewport at 50:1. |
 | `annoblk-2018.dwg`, `.dxf`; `annoblk-2013.dwg`, `.dxf` | 2018, 2013 | An annotative block `AT` (a rectangle, a single-line attribute definition `NUM` and a multi-line one `NOTE`) placed twice at the annotation scale 1:2, at rotations 0 and 45 (NUM = A1, NOTE = SEE / DETAIL 4); one sheet viewport at 1:2. |
 
+| `ax1txt`, `ax1mtx`, `ax1dim`, `ax1hat`, `ax1mld`, `ax1blk`, `ax2txt` (`-2018`, `-2013` `.dwg`/`.dxf`) | 2018, 2013 | Thirteenth sitting (Round 13): single-scale annotative TEXT, MTEXT, DIMENSION, HATCH, MULTILEADER, and BLOCK, plus two-scale annotative TEXT (`ax2txt`). |
+| `xlray`, `plwmix`, `ucsbase`, `dxface3d` (`-2018`, `-2013` `.dwg`/`.dxf`) | 2018, 2013 | Thirteenth sitting: XLINE/RAY pair (`xlray`), mixed-width 2D POLYLINE (`plwmix`), named UCS (`ucsbase`), and DXF-born 3DFACE (`dxface3d`). |
+| `big10k-*`, `bench/big50k-*`, `bench/big100k-*`, `bench/blkmul-*` (`-2018`, `-2013` `.dwg`/`.dxf`) | 2018, 2013 | Thirteenth sitting: large benchmark drawings (10k, 50k, and 100k entities, plus high-multiplier block inserts `blkmul`). |
+| `F1`, `F2`, `G1`, `G2`, `T0`, `attjust`, `attrib`, `attrot`, `attscale`, `dimang3`, `mzarc`, `mzell`, `mzins`, `omd-plan`, `pagesetup`, `pl2darc`, `polyline2d`, `stylew`, `thickline`, `ucs` (`-2000`, `-2004`, `-2007`, `-2010` `.dwg`/`.dxf`) | 2000, 2004, 2007, 2010 | Thirteenth sitting: AutoCAD LT 2027 down-saves of 20 existing CC0 test drawings across DWG/DXF 2000, 2004, 2007, and 2010. |
+| `q3r/rq-{omd-plan,attrib,leader,mleader}-back-2018.dxf` | 2018 | Thirteenth sitting: AutoCAD LT 2027 re-saves of four DXFs written by `omd-dwg-reader` (`3d468576`). |
+
 `SHA256SUMS` lists every file's sha256.
